@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<h1>Hello!</h1>
+{% block wordle %} {% endblock %}
+{% for bib in bibs %}
+<hr>
+Title: <a href={{bib.link}}>{{bib.title}}</a> <br>
+Author: {{bib.author}} <br>
+Year: {{bib.year}} <br>
+{% if bib.abstract %}
+Abstract: {{bib.abstract}} <br>
+{% endif %}
+Keyword: {{bib.keyword}} <br>
+
+{% endfor %}
