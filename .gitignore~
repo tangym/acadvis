@@ -1,0 +1,9 @@
+/redis-*/
+__pycache__
+/redis/dump.rdb
+/SIGIR/
+*.log
+/lexicon.json
+/bib.txt
+.git
+.gitignore
